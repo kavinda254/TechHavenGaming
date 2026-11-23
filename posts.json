@@ -1,0 +1,24 @@
+[
+  {
+    "category": "Game",
+    "title": "Where to find free PC games",
+    "body": "Browse Steam’s free-to-play section. Before installing, check the game’s minimum specifications and how much disk space it needs. If the game has optional purchases, check whether they affect the modes you want to play.",
+    "url": "https://store.steampowered.com/genre/Free%20to%20Play/"
+  },
+  {
+    "category": "Mod",
+    "title": "Your first Steam Workshop mod",
+    "body": "Start from your game’s Workshop page and check that the mod supports your current game version. Read the description for dependencies, back up your saves, then subscribe and test one mod at a time so you can identify conflicts.",
+    "url": "https://steamcommunity.com/workshop/"
+  },
+  {
+    "category": "Guide",
+    "title": "What should you upgrade on an older PC?",
+    "body": "Measure what slows down first. If Windows and apps take a long time to load from a hard drive, start with a SATA SSD. If memory usage stays near capacity, check your motherboard’s supported RAM type and limits. For games, compare your graphics card against the minimum requirements and check PSU connectors and case clearance before buying."
+  },
+  {
+    "category": "Guide",
+    "title": "Make a bootable USB for PC repairs",
+    "body": "Keep a spare USB drive for a Windows installer or a Linux live environment. Back up the USB before writing the image, then use the PC’s one-time boot menu to test it. Label the drive and keep a separate copy of important files before doing repairs."
+  }
+]

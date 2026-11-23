@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tech Haven | PC games, mods & guides</title>
+<style>
+:root{color-scheme:dark;--bg:#101019;--panel:#191925;--edge:#303041;--ink:#f5f3ff;--muted:#b9b6cb;--lime:#d5ff63}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.55 system-ui,sans-serif}header{border-bottom:1px solid var(--edge)}.wrap{max-width:1180px;padding:0 28px;margin:auto}.bar{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:12px}.brand{font-size:1.2rem;font-weight:900;letter-spacing:-.04em;color:var(--ink);text-decoration:none}.brand span{color:var(--lime)}button,a{touch-action:manipulation}button,.button{font:inherit;font-weight:750;padding:10px 18px;border:1px solid var(--edge);border-radius:9px;background:var(--panel);color:var(--ink);cursor:pointer;text-decoration:none;display:inline-block}.primary{background:var(--lime);color:#161b0c;border-color:var(--lime)}button:hover,.button:hover{filter:brightness(1.13)}:focus-visible{outline:2px solid #af9cff;outline-offset:4px}
+.hero{position:relative;isolation:isolate;overflow:hidden;margin:30px 0 36px;border:1px solid #403859;border-radius:22px;padding:clamp(30px,6vw,75px);background:radial-gradient(ellipse at 82% 36%,#4c2e85 0%,#241b3e 37%,#181726 69%)}.hero:before{content:"";position:absolute;width:530px;height:350px;right:-35px;top:15px;z-index:-1;opacity:.55;transform:rotate(-21deg) skew(15deg);background:repeating-linear-gradient(90deg,transparent 0 31px,#a982ff66 32px 33px),repeating-linear-gradient(0deg,transparent 0 31px,#a982ff66 32px 33px);mask-image:radial-gradient(ellipse,#000 12%,transparent 72%)}.hero:after{content:"";position:absolute;top:24%;right:12%;width:150px;height:150px;border:2px solid #b093ff;box-shadow:0 0 44px #a278ff80,inset 0 0 34px #a278ff80;transform:rotate(-28deg) skew(15deg);border-radius:24px;z-index:-1;opacity:.7}.hero small{font-weight:850;color:var(--lime);text-transform:uppercase;letter-spacing:.13em}h1{font-size:clamp(2.8rem,7vw,6rem);line-height:.94;letter-spacing:-.075em;margin:15px 0 22px}h1 span{color:#c4aeff}.hero p{max-width:420px;color:#e1d9f5;margin:0 0 26px}.toolbar, .section-head,.filters,.actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.section-head{justify-content:space-between;margin-bottom:15px}.toolbar{justify-content:space-between;margin-bottom:19px}h2{font-size:1.6rem;letter-spacing:-.04em;margin:0}.filters button[aria-pressed=true]{color:var(--lime);border-color:#75894c}input,select,textarea{background:#12121b;border:1px solid var(--edge);border-radius:8px;color:var(--ink);font:inherit;padding:10px 12px;width:100%}#search{max-width:270px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{min-width:0;background:var(--panel);border:1px solid var(--edge);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}.cover{height:105px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 125%,#6d499a,#28203b 75%);border-bottom:1px solid var(--edge);color:#eadbff;font-size:2.5rem}.cover[data-kind=Game]{background:radial-gradient(ellipse at 50% 125%,#556936,#232d25 75%);color:var(--lime)}.cover[data-kind=Guide]{background:radial-gradient(ellipse at 50% 125%,#375c8c,#202838 75%);color:#c3ddff}.copy{padding:19px;display:flex;flex-direction:column;flex:1;overflow-wrap:anywhere}.category{color:var(--lime);font-size:.875rem;font-weight:750}.copy h3{font-size:1.24rem;line-height:1.25;margin:7px 0 0}.copy p{color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:9px 0 18px}.copy .actions{margin-top:auto}.copy button,.copy a{font-size:.875rem;padding:7px 11px}footer{margin-top:42px;border-top:1px solid var(--edge);padding-block:22px;color:var(--muted)}dialog{width:min(550px,calc(100% - 28px));max-height:90vh;background:var(--panel);color:var(--ink);border:1px solid var(--edge);border-radius:16px;padding:23px}dialog::backdrop{background:#090810bd}label{display:block;margin:12px 0}textarea{resize:vertical}.close{margin-left:auto}.body{white-space:pre-wrap;overflow-wrap:anywhere}.status{color:var(--muted)}[hidden]{display:none!important}@media(max-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.wrap{padding-inline:16px}.grid{grid-template-columns:1fr}.hero:after{right:-66px;opacity:.35}#search{max-width:none}}
+</style></head>
+<body><header><div class="wrap bar"><a class="brand" href="./">TECH<span> HAVEN</span></a><div class="actions"><a class="button" href="#library">Browse</a></div></div></header>
+<main class="wrap"><section class="hero"><small>PC gaming & hardware</small><h1>Play more.<br><span>Build better.</span></h1><p>Find free PC games, get started with mods, and learn what to upgrade on your rig.</p><a class="button primary" href="#library">Explore the library</a></section>
+<section id="library"><div class="section-head"><h2>The library</h2><span id="count" class="status"></span></div><div class="toolbar"><div class="filters" aria-label="Filter posts"><button data-filter="All" aria-pressed="true">All posts</button><button data-filter="Game" aria-pressed="false">Games</button><button data-filter="Mod" aria-pressed="false">Mods</button><button data-filter="Guide" aria-pressed="false">Guides</button></div><input id="search" type="search" placeholder="Search the library" aria-label="Search the library"></div><p id="status" class="status" role="status"></p><div class="grid" id="cards"></div></section></main>
+<footer><div class="wrap">Tech Haven</div></footer>
+
+<dialog id="reader"><div class="section-head"><h2></h2><button type="button" class="close" aria-label="Close article">Close</button></div><p class="category"></p><div class="body"></div><p><a class="button primary source" target="_blank" rel="noopener noreferrer">Open source</a></p></dialog>
+<script>const get = (id) => document.getElementById(id);
+let posts = [], active = 'All';
+const reader = get('reader');
+function element(tag, value, className) {
+  const node = document.createElement(tag);
+  if (value) node.textContent = value;
+  if (className) node.className = className;
+  return node;
+}
+function browse(post) {
+  reader.querySelector('h2').textContent = post.title;
+  reader.querySelector('.category').textContent = post.category;
+  reader.querySelector('.body').textContent = post.body;
+  const link = reader.querySelector('.source');
+  let url;
+  try { url = new URL(post.url); } catch {}
+  link.hidden = !url || !['https:', 'http:'].includes(url.protocol);
+  if (!link.hidden) link.href = url.href;
+  reader.showModal();
+}
+function render() {
+  const query = get('search').value.trim().toLowerCase();
+  const matches = posts.filter(post =>
+    (active === 'All' || post.category === active) &&
+    [post.title,post.body,post.category].some(value => value.toLowerCase().includes(query)));
+  get('count').textContent = matches.length + (matches.length === 1 ? ' post' : ' posts');
+  get('cards').replaceChildren(...matches.map(post => {
+    const card = element('article', '', 'card');
+    const cover = element('div', {Game:'◆',Mod:'✳',Guide:'▤'}[post.category], 'cover');
+    cover.dataset.kind = post.category;
+    cover.setAttribute('aria-hidden','true');
+    const copy = element('div', '', 'copy');
+    const actions = element('div', '', 'actions');
+    const read = element('button', 'Read post');
+    read.onclick = () => browse(post);
+    actions.append(read);
+
+    copy.append(element('span',post.category,'category'),element('h3',post.title),element('p',post.body),actions);
+    card.append(cover,copy);
+    return card;
+  }));
+  if (!matches.length) get('cards').append(element('p','No matching posts.','status'));
+}
+function updateFilters() {
+  document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.filter === active)));
+}
+document.querySelectorAll('[data-filter]').forEach(button => button.onclick = () => {active = button.dataset.filter;updateFilters();render();});
+document.querySelectorAll('.close').forEach(button => button.onclick = () => button.closest('dialog').close());
+get('search').oninput = render;
+
+async function load() {
+  try {
+    const response = await fetch('./posts.json');
+    if (!response.ok) throw new Error();
+    const data = await response.json();
+    if (!Array.isArray(data)) throw new Error();
+    posts = data;
+    render();
+  } catch {
+    get('status').textContent = 'Could not load the library. Check that posts.json is available and contains valid JSON.';
+  }
+}
+load();
+</script></body></html>
